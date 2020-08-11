@@ -8,7 +8,7 @@ $("form").submit(function (evt) {
         let name = names[i].toLowerCase().trim();
         if (name != "") {
             if (chat.includes(name)) {
-                students.push({ name: name, present: true });
+                students.push({ name: name, present: "x" });
             } else {
                 students.push({ name: name, present: false });
             }
